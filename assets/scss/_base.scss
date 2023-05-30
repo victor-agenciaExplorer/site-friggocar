@@ -1,0 +1,18 @@
+@use 'variables';
+
+.main-btn {
+    background-color: variables.$blue-500;
+    display: block;
+
+    padding: 20px 40px;
+    margin: 0 auto;
+
+    color: variables.$white;
+    font-weight: 700;
+    font-size: variables.$font-xxmd;
+    text-transform: uppercase;
+
+    &.cta-banner {
+        max-width: 211px;
+    }
+}

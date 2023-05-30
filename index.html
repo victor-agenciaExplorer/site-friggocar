@@ -6,27 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friggocar | Home</title>
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <img src="assets/images/logo.svg" alt="">
-        <div>
-            <a href="#">quem somos</a>
-            <a href="#">carrocerias</a>
-            <a href="#">placas eutéticas</a>
-            <a href="#">contato</a>
-            <a href="#">Fale com um especialista</a>
-        </div>
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/images/logo.svg" alt="" width="157" height="46" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a href="#">quem somos</a>
+                        <a href="#">carrocerias</a>
+                        <a href="#">placas eutéticas</a>
+                        <a href="#">contato</a>
+                        <a href="#">Fale com um especialista</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Banner -->
-    <section>
-        <div>
-            <h1>carrocerias frigoríficas</h1>
-            <p>Qualidade renovada<br>Excelência comprovada</p>
-            <a href="">Saiba mais</a>
+    <section class="banner">
+        <div class="container text-center">
+            <div class="banner-content-wrapper">
+                <h1>carrocerias frigoríficas</h1>
+                <p>Qualidade renovada<br>Excelência comprovada</p>
+                <a href="#" class="btn main-btn cta-banner" role="button">Saiba mais</a>
+            </div>
         </div>
     </section>
 
@@ -170,10 +191,7 @@
                 </a>
             </address>
 
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA">
-            </iframe>
+            <!-- <iframe></iframe>  -->
         </section>
     </main>
 
@@ -225,6 +243,10 @@
     <button>
         <img src="assets/images/whatsapp.svg" alt="">
     </button>
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>

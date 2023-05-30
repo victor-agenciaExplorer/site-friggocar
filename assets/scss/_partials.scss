@@ -1,0 +1,45 @@
+@use 'variables';
+
+header {
+    nav {
+        padding-top: 2rem !important;
+    }
+}
+
+.banner {
+    height: 95vh;
+
+    background-image: url('../images/banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    > div {
+        color: variables.$white;
+    }
+
+    .banner-content-wrapper {
+        padding-top: 33%;
+
+        h1 {
+            font-size: variables.$font-xxxl;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 117%;
+
+            margin-bottom: 1.125rem;
+            text-transform: uppercase;
+        }
+    
+        p {
+            font-size: variables.$font-xxmd;
+            font-weight: 500;
+            line-height: 160%;
+
+            margin-bottom: 1.75rem;
+        }
+    }
+
+    
+}

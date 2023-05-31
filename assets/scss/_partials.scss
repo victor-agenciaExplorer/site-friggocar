@@ -1,4 +1,6 @@
 @use 'variables';
+@use 'base';
+
 
 header {
     nav {
@@ -23,19 +25,19 @@ header {
         padding-top: 33%;
 
         h1 {
+            @extend .title;
             font-size: variables.$font-xxxl;
-            font-weight: 700;
-            letter-spacing: -0.03em;
             line-height: 117%;
 
             margin-bottom: 1.125rem;
-            text-transform: uppercase;
+            color: inherit;
         }
     
         p {
+            @extend .text;
             font-size: variables.$font-xxmd;
-            font-weight: 500;
             line-height: 160%;
+            color: inherit;
 
             margin-bottom: 1.75rem;
         }

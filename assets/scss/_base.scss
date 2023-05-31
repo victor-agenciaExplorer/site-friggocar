@@ -6,13 +6,65 @@
 
     padding: 20px 40px;
     margin: 0 auto;
+    border-radius: 0;
 
     color: variables.$white;
+
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: variables.$font-xxmd;
+
     text-transform: uppercase;
 
     &.cta-banner {
         max-width: 211px;
+    }
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: variables.$font-xxl;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+
+    line-height: 125%;
+
+    color: variables.$red;
+
+    &--card {
+        @extend .title;
+        font-size: variables.$font-lg;
+
+        color: variables.$blue-500;
+
+        line-height: 140%;
+    }
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: variables.$font-xmd;
+    font-weight: 700;
+
+    text-align: center;
+
+    line-height: 125%;
+
+    color: variables.$blue-500;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: variables.$font-md;
+    font-weight: 500;
+
+    color: variables.$blue-900;
+
+    &--center {
+        @extend .text;
+        text-align: center;
     }
 }

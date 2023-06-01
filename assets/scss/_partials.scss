@@ -6,6 +6,27 @@ header {
     nav {
         padding-top: 2rem !important;
     }
+
+    .navbar-nav {
+        .nav-link {
+            @extend .text;
+
+            color: variables.$white;
+            font-size: 1rem;
+
+            line-height: 250%;
+
+            text-transform: uppercase;
+        }
+
+        .btn {
+            max-width: 271px;
+            font-size: variables.$font-xmd;
+            color: variables.$white;
+
+            padding: 0.875rem 1.375rem;
+        }
+    }
 }
 
 .banner {
@@ -15,14 +36,23 @@ header {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    
 
-    > div {
+    @media (min-width: 991px) {
+        background-image: url('../images/banner-desktop.jpg');
+        height: 100vh;
+    }
+
+    >div {
         color: variables.$white;
     }
 
     .banner-content-wrapper {
         padding-top: 33%;
+
+        @media (min-width: 991px) {
+            max-width: 490px;
+            padding-top: 12%;
+        }
 
         h1 {
             @extend .title;
@@ -31,8 +61,12 @@ header {
 
             margin-bottom: 1.125rem;
             color: inherit;
+
+            @media (min-width: 991px) {
+                text-align: left;
+            }
         }
-    
+
         p {
             @extend .text;
             font-size: variables.$font-xxmd;
@@ -43,5 +77,228 @@ header {
         }
     }
 
-    
+
+}
+
+.about-us {
+    // @media (min-width: 991px) {
+    //     background-image: url('../images/truck-desktop.png');
+    //     background-position: bottom;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    // }
+}
+
+.products {
+    height: 80vh;
+    position: relative;
+
+    >div {
+        height: 100%;
+
+        >div {
+            height: 100%;
+
+            >div {
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel-products-dots {
+        position: absolute;
+        bottom: 50px;
+
+        height: 15px;
+        width: 100%;
+    }
+}
+
+.product {
+    background-color: variables.$blue-900;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: variables.$white;
+
+    &--first {
+        @extend .product;
+        background-image: url(../images/bg-truck.jpg);
+    }
+
+    &--second {
+        @extend .product;
+        background-image: url(../images/bg-plates.jpg);
+    }
+
+    .product-wrapper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        height: 100%;
+
+        padding: 0 2rem 6rem;
+
+        span {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: variables.$font-sm;
+
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+
+
+                height: 2px;
+                width: 15px;
+
+                background-color: variables.$white;
+            }
+        }
+
+        .subtitle {
+            @extend .subtitle;
+
+            font-size: variables.$font-xl;
+            color: inherit;
+
+            line-height: 114%;
+            text-align: left;
+
+            max-width: 264px;
+        }
+
+        p {
+            @extend .text;
+
+            color: inherit;
+            font-size: variables.$font-sm;
+
+            max-width: 320px
+        }
+
+        ul {
+            li {
+                @extend .text;
+
+                color: inherit;
+
+                font-size: variables.$font-sm;
+                font-weight: 700;
+            }
+        }
+
+        .btn {
+            @extend .base-button--outlined;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+
+            padding: 0.75rem 1.5rem;
+
+            position: absolute;
+            right: 42px;
+            bottom: 100px;
+
+            width: auto;
+
+            img {
+                width: 10px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+.newsletter {
+    background-color: variables.$blue-900;
+    background-image: url('../images/bg-newsletter.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .newsletter-content-wrapper {
+        max-width: 320px;
+    }
+}
+
+footer {
+    strong {
+        @extend .title;
+
+        color: variables.$blue-900;
+        font-size: variables.$font-default;
+    }
+
+    .address-footer {
+        background-color: variables.$blue-900;
+        color: variables.$white;
+
+        padding: 2.5rem;
+
+        address {
+            color: inherit;
+        }
+    }
+}
+
+.float {
+    position: fixed;
+    z-index: 100;
+
+    bottom: 110px;
+    right: 10px;
+
+    width: 75px;
+    height: 75px;
+
+    background-color: variables.$green;
+    color: #FFF;
+
+    border-radius: 50%;
+
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        -webkit-transform: translatey(5px);
+        transform: translatey(5px);
+
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
+
+        background-color: variables.$green;
+        opacity: .9;
+    }
+}
+
+.google-maps {
+    padding-bottom: 90%;
+    position: relative;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }

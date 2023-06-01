@@ -137,6 +137,11 @@
 
     text-align: center;
 }
+
+.carousel-products-dots .slick-dots {
+    bottom: 0px;
+}
+
 .slick-dots li
 {
     position: relative;
@@ -201,8 +206,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.carousel-products-dots .slick-dots li button:before {
+    color: #FFFFFF;
+    opacity: .30;
+}
+
 .slick-dots li.slick-active button:before
 {
     /* opacity: .75; */
     color: #8A8A8A;
+}
+
+.carousel-products-dots .slick-dots li.slick-active button:before{
+    color: #FFFFFF;
+    opacity: 1;
 }

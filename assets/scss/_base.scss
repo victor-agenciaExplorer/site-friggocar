@@ -1,5 +1,9 @@
 @use 'variables';
 
+body {
+    overflow-x: hidden;
+}
+
 .base-button {
     background-color: variables.$blue-500;
     display: block;
@@ -20,11 +24,15 @@
 
     text-transform: uppercase;
 
-    &:hover {
+    &:hover, &:focus-visible, &:not(.btn-check).btn:active  {
         transition: all .3s;
         color: variables.$white;
-
+        
         background-color: variables.$blue-900;
+    }
+
+    &:not(.btn-check).btn:active {
+        border-color: variables.$gray-200;
     }
 
     &.cta-banner {
@@ -82,6 +90,10 @@
         font-size: variables.$font-xl;
 
         color: variables.$white;
+
+        @media (min-width: 991px) {
+            text-align: left;
+        }
     }
 
     &--align-left {
@@ -145,12 +157,20 @@
             color: variables.$blue-900;
         }
 
+        &:focus, &:focus-visible {
+            outline: 1px solid variables.$gray-200;
+        }
+
         &.input-newsletter {
             color: variables.$white;
             border: 1px solid variables.$gray-500;
 
             &::placeholder {
                 color: variables.$white;
+            }
+
+            &:focus, &:focus-visible {
+                outline: 1px solid variables.$gray-500;
             }
         }
     }
@@ -181,5 +201,9 @@ address {
     a {
         text-decoration: none;
         color: inherit;
+    }
+
+    @media (min-width: 991px) {
+        max-width: 600px;
     }
 }

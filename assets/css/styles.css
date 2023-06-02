@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .base-button, .base-button--outlined, .product .product-wrapper .btn, .product--first .product-wrapper .btn, .product--second .product-wrapper .btn {
   background-color: #006FB8;
   display: block;
@@ -12,10 +16,13 @@
   font-size: 1.375rem;
   text-transform: uppercase;
 }
-.base-button:hover, .base-button--outlined:hover, .product .product-wrapper .btn:hover, .product--first .product-wrapper .btn:hover, .product--second .product-wrapper .btn:hover {
+.base-button:hover, .base-button--outlined:hover, .product .product-wrapper .btn:hover, .product--first .product-wrapper .btn:hover, .product--second .product-wrapper .btn:hover, .base-button:focus-visible, .base-button--outlined:focus-visible, .product .product-wrapper .btn:focus-visible, .product--first .product-wrapper .btn:focus-visible, .product--second .product-wrapper .btn:focus-visible, .base-button:not(.btn-check).btn:active, .base-button--outlined:not(.btn-check).btn:active, .product .product-wrapper :not(.btn-check).btn:active, .product--first .product-wrapper :not(.btn-check).btn:active, .product--second .product-wrapper :not(.btn-check).btn:active {
   transition: all 0.3s;
   color: #FFFFFF;
   background-color: #004D80;
+}
+.base-button:not(.btn-check).btn:active, .base-button--outlined:not(.btn-check).btn:active, .product .product-wrapper :not(.btn-check).btn:active, .product--first .product-wrapper :not(.btn-check).btn:active, .product--second .product-wrapper :not(.btn-check).btn:active {
+  border-color: #C5C5C5;
 }
 .base-button.cta-banner, .cta-banner.base-button--outlined, .product .product-wrapper .cta-banner.btn, .product--first .product-wrapper .cta-banner.btn, .product--second .product-wrapper .cta-banner.btn {
   max-width: 211px;
@@ -58,6 +65,11 @@
   font-size: 2.25rem;
   color: #FFFFFF;
 }
+@media (min-width: 991px) {
+  .title--newsletter {
+    text-align: left;
+  }
+}
 .title--align-left {
   text-align: left;
 }
@@ -74,7 +86,7 @@
   text-align: left;
 }
 
-.text, header .navbar-nav .nav-link, .banner .banner-content-wrapper p, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .link, .text--center {
+.text, header nav .navbar-nav .nav-link, .banner .banner-content-wrapper p, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .link, .text--center {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
@@ -98,12 +110,18 @@
 .form input::placeholder, .form textarea::placeholder {
   color: #004D80;
 }
+.form input:focus, .form input:focus-visible, .form textarea:focus, .form textarea:focus-visible {
+  outline: 1px solid #C5C5C5;
+}
 .form input.input-newsletter, .form textarea.input-newsletter {
   color: #FFFFFF;
   border: 1px solid #888888;
 }
 .form input.input-newsletter::placeholder, .form textarea.input-newsletter::placeholder {
   color: #FFFFFF;
+}
+.form input.input-newsletter:focus, .form input.input-newsletter:focus-visible, .form textarea.input-newsletter:focus, .form textarea.input-newsletter:focus-visible {
+  outline: 1px solid #888888;
 }
 
 .link {
@@ -125,18 +143,73 @@ address a {
   text-decoration: none;
   color: inherit;
 }
-
-header nav {
-  padding-top: 2rem !important;
+@media (min-width: 991px) {
+  address {
+    max-width: 600px;
+  }
 }
-header .navbar-nav .nav-link {
+
+header nav.navbar {
+  padding: 2rem !important;
+  transition: all 0.3s;
+}
+header nav.navbar.fixedHeader {
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+}
+header nav.navbar.scrollHeader {
+  background-color: #004D80;
+}
+header nav.navbar .navbar-toggler {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  width: 36px;
+  height: 28px;
+}
+header nav.navbar .navbar-toggler .open-menu {
+  content: url("../images/hamburguer.svg");
+  opacity: 1;
+  display: block;
+  transition: all 0.1s;
+}
+header nav.navbar .navbar-toggler .close-menu {
+  content: url("../images/close.svg");
+  display: none;
+  transition: all 0.1s;
+}
+header nav.navbar .navbar-toggler:focus,
+header nav.navbar .navbar-toggler :focus-visible {
+  box-shadow: unset;
+}
+header nav.navbar.active {
+  background-color: rgba(0, 77, 128, 0.8);
+  backdrop-filter: blur(15px);
+}
+header nav.navbar.active .navbar-toggler {
+  width: 28px;
+}
+header nav.navbar.active .navbar-toggler .open-menu {
+  opacity: 0;
+  display: none;
+}
+header nav.navbar.active .navbar-toggler .close-menu {
+  opacity: 1;
+  display: block;
+}
+header nav .navbar-nav .nav-link {
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 250%;
   text-transform: uppercase;
+  white-space: nowrap;
 }
-header .navbar-nav .btn {
-  max-width: 271px;
+header nav .navbar-nav .nav-link:hover {
+  color: #888888;
+  transition: all 0.3s;
+}
+header nav .navbar-nav .btn {
+  max-width: 281px;
   font-size: 1.25rem;
   color: #FFFFFF;
   padding: 0.875rem 1.375rem;
@@ -183,6 +256,28 @@ header .navbar-nav .btn {
   line-height: 160%;
   color: inherit;
   margin-bottom: 1.75rem;
+}
+
+@media (min-width: 991px) {
+  .carousel-cards span.title--card {
+    max-width: 185px;
+    height: 70px;
+  }
+  .carousel-cards img {
+    width: 98px;
+    height: 98px;
+  }
+}
+
+@media (min-width: 991px) {
+  .about-us .curves-background {
+    background-image: url("../images/curves.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 110%;
+    height: 100%;
+    position: relative;
+  }
 }
 
 .products {
@@ -265,14 +360,32 @@ header .navbar-nav .btn {
   justify-content: space-between;
   gap: 1.5rem;
   padding: 0.75rem 1.5rem;
-  position: absolute;
-  right: 42px;
-  bottom: 100px;
   width: auto;
+  margin: 0 auto 0 0;
 }
 .product .product-wrapper .btn img, .product--first .product-wrapper .btn img, .product--second .product-wrapper .btn img {
   width: 10px;
   height: 8px;
+  transition: transform 1s ease;
+}
+.product .product-wrapper .btn:hover, .product--first .product-wrapper .btn:hover, .product--second .product-wrapper .btn:hover {
+  background-color: rgba(0, 77, 128, 0.1);
+}
+.product .product-wrapper .btn:hover img, .product--first .product-wrapper .btn:hover img, .product--second .product-wrapper .btn:hover img {
+  transform: translate(8px, 0);
+}
+@media (min-width: 991px) {
+  .product .product-wrapper .subtitle, .product--first .product-wrapper .subtitle, .product--second .product-wrapper .subtitle {
+    max-width: 480px;
+  }
+  .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p {
+    max-width: 604px;
+  }
+  .product .product-wrapper .btn, .product--first .product-wrapper .btn, .product--second .product-wrapper .btn {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
 }
 
 .newsletter {
@@ -284,8 +397,28 @@ header .navbar-nav .btn {
 }
 .newsletter .newsletter-content-wrapper {
   max-width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 991px) {
+  .newsletter .newsletter-content-wrapper {
+    max-width: unset;
+    margin: unset;
+  }
+  .newsletter .newsletter-content-wrapper .title--newsletter {
+    max-width: 470px;
+  }
+  .newsletter .newsletter-content-wrapper .form {
+    max-width: 480px;
+  }
 }
 
+@media (min-width: 991px) and (max-width: 1700px) {
+  footer .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 footer strong {
   color: #004D80;
   font-size: 1rem;
@@ -324,6 +457,12 @@ footer .address-footer address {
   background-color: #25D366;
   opacity: 0.9;
 }
+@media (min-width: 991px) {
+  .float {
+    right: 80px;
+    bottom: 100px;
+  }
+}
 
 .google-maps {
   padding-bottom: 90%;
@@ -335,6 +474,16 @@ footer .address-footer address {
   position: absolute;
   left: 0;
   top: 0;
+}
+@media (min-width: 991px) {
+  .google-maps {
+    padding-bottom: 30%;
+  }
+}
+@media (min-width: 1600px) {
+  .google-maps {
+    padding-bottom: 20%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

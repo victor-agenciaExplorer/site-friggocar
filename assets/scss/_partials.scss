@@ -4,27 +4,93 @@
 
 header {
     nav {
-        padding-top: 2rem !important;
-    }
+        &.navbar {
+            padding: 2rem !important;
+            transition: all .3s;
 
-    .navbar-nav {
-        .nav-link {
-            @extend .text;
+            &.fixedHeader {
+                background-color: transparent;
+                backdrop-filter: blur(0px);
+            }
 
-            color: variables.$white;
-            font-size: 1rem;
+            &.scrollHeader {
+                background-color: variables.$blue-900;
+            }
 
-            line-height: 250%;
+            .navbar-toggler {
+                padding: 0;
+                border: 0;
+                border-radius: 0;
 
-            text-transform: uppercase;
+                width: 36px;
+                height: 28px;
+
+                .open-menu {
+                    content: url('../images/hamburguer.svg');
+                    opacity: 1;
+                    display: block;
+
+                    transition: all .1s;
+                }
+
+                .close-menu {
+                    content: url('../images/close.svg');
+                    display: none;
+
+                    transition: all .1s;
+                }
+
+                &:focus,
+                :focus-visible {
+                    box-shadow: unset;
+                }
+            }
+
+            &.active {
+                background-color: rgba(0, 77, 128, 0.8);
+                backdrop-filter: blur(15px);
+
+                .navbar-toggler {
+                    width: 28px;
+
+                    .open-menu {
+                        opacity: 0;
+                        display: none;
+                    }
+
+                    .close-menu {
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+            }
         }
 
-        .btn {
-            max-width: 271px;
-            font-size: variables.$font-xmd;
-            color: variables.$white;
+        .navbar-nav {
+            .nav-link {
+                @extend .text;
 
-            padding: 0.875rem 1.375rem;
+                color: variables.$white;
+                font-size: 1rem;
+
+                line-height: 250%;
+
+                text-transform: uppercase;
+                white-space: nowrap;
+
+                &:hover {
+                    color: variables.$gray-500;
+                    transition: all .3s;
+                }
+            }
+
+            .btn {
+                max-width: 281px;
+                font-size: variables.$font-xmd;
+                color: variables.$white;
+
+                padding: 0.875rem 1.375rem;
+            }
         }
     }
 }
@@ -80,13 +146,32 @@ header {
 
 }
 
+.carousel-cards {
+    @media (min-width: 991px) {
+        span.title--card {
+            max-width: 185px;
+            height: 70px;
+        }
+
+        img {
+            width: 98px;
+            height: 98px;
+        }
+    }
+}
+
 .about-us {
-    // @media (min-width: 991px) {
-    //     background-image: url('../images/truck-desktop.png');
-    //     background-position: bottom;
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    // }
+    .curves-background {
+        @media (min-width: 991px) {
+            background-image: url('../images/curves.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 150% 110%;
+
+            height: 100%;
+            position: relative;
+        }
+    }
 }
 
 .products {
@@ -183,7 +268,7 @@ header {
             color: inherit;
             font-size: variables.$font-sm;
 
-            max-width: 320px
+            max-width: 320px;
         }
 
         ul {
@@ -207,15 +292,40 @@ header {
 
             padding: 0.75rem 1.5rem;
 
-            position: absolute;
-            right: 42px;
-            bottom: 100px;
-
             width: auto;
+
+            margin: 0 auto 0 0;
 
             img {
                 width: 10px;
                 height: 8px;
+
+                transition: transform 1s ease;
+            }
+
+
+            &:hover {
+                background-color: rgba(0, 77, 128, 0.1);
+
+                img {
+                    transform: translate(8px, 0);
+                }
+            }
+        }
+
+        @media (min-width: 991px) {
+            .subtitle {
+                max-width: 480px;
+            }
+
+            p {
+                max-width: 604px;
+            }
+
+            .btn {
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
             }
         }
     }
@@ -230,10 +340,32 @@ header {
 
     .newsletter-content-wrapper {
         max-width: 320px;
+        margin: 0 auto;
+
+        @media (min-width: 991px) {
+            max-width: unset;
+            margin: unset;
+
+            .title--newsletter {
+                max-width: 470px;
+            }
+
+            .form {
+                max-width: 480px;
+            }
+        }
     }
 }
 
 footer {
+    .logo {
+        @media (min-width: 991px) and (max-width: 1700px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     strong {
         @extend .title;
 
@@ -287,6 +419,11 @@ footer {
         background-color: variables.$green;
         opacity: .9;
     }
+
+    @media (min-width: 991px) {
+        right: 80px;
+        bottom: 100px;
+    }
 }
 
 .google-maps {
@@ -300,5 +437,13 @@ footer {
         position: absolute;
         left: 0;
         top: 0;
+    }
+
+    @media (min-width: 991px) {
+        padding-bottom: 30%;
+    }
+
+    @media (min-width: 1600px) {
+        padding-bottom: 20%;
     }
 }

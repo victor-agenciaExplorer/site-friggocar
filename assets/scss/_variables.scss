@@ -14,9 +14,9 @@ $red: #EF393B;
 $white: #FFFFFF;
 
 //Font Sizes
-$font-xxxl: 3.375rem; //54
-$font-xxl: 2.5rem; //40
-$font-xl: 2.25rem; //36
+$font-xxxl: 3.75rem; //60
+$font-xxl: 3.125rem; //50
+$font-xl: 2.1875rem; //35
 $font-lg: 1.5625rem; //25
 $font-xxmd: 1.375rem; //22
 $font-xmd: 1.25rem; //20
@@ -24,5 +24,9 @@ $font-md: 1.125rem; //18
 $font-default: 1rem; //16
 $font-sm: 0.9375rem; //15
 
-
-
+//Não é possível com SCSS 
+@media (max-width: 768px) {
+    $font-xxxl: 3.375rem; //54
+    $font-xxl: 2.5rem; //40
+    $font-xl: 1.875rem; //30
+}

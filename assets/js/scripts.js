@@ -18,7 +18,7 @@ $(window).on('load resize orientationchange', function () {
         }
     });
 
-     $('.carousel-products').each(function() {
+    $('.carousel-products').each(function () {
         var $carousel = $(this);
 
         if ($(window).width() > 768) {
@@ -37,16 +37,34 @@ $(window).on('load resize orientationchange', function () {
                 });
             }
         }
-     })
+    })
 
-    //  alert("Este é um site em desenvolvimento. Ao final do dia, teremos uma nova versão por aqui. Enquanto isso, que tal me enviar um feedback no Slack, sobre sua experiência? Obrigado! :D");
+    $('.carousel-gallery').each(function () {
+        var $carousel = $(this);
+
+        if ($(window).width() > 768) {
+            if ($carousel.hasClass('slick-initialized')) {
+                $carousel.slick('unslick');
+            }
+        }
+
+        else {
+            if (!$carousel.hasClass('slick-initialized')) {
+                $carousel.slick({
+                    dots: true,
+                    mobileFirst: true,
+                    arrows: true
+                });
+            }
+        }
+    })
 })
 
-$(function() {
+$(function () {
     var header = $(".navbar");
     var toggler = $(".navbar-toggler");
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 80) {
@@ -56,7 +74,9 @@ $(function() {
         }
     });
 
-    $(toggler).click(function() {
-        $(header).toggleClass('active'); 
+    $(toggler).click(function () {
+        $(header).toggleClass('active');
     })
+
+    //  alert("Este é um site em desenvolvimento. Ao final do dia, teremos uma nova versão por aqui. Enquanto isso, que tal me enviar um feedback no Slack, sobre sua experiência? Obrigado! :D");
 });

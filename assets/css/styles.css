@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .base-button, .base-button--outlined, .product .product-wrapper .btn, .product--first .product-wrapper .btn, .product--second .product-wrapper .btn {
@@ -46,9 +48,13 @@ body {
   font-size: 1.125rem;
 }
 
-.title, .banner .banner-content-wrapper h1, footer strong, .title--align-left, .title--newsletter, .title--card {
+.title, .banner .banner-content-wrapper h1, .banner-internal .banner-internal-content-wrapper h1, footer strong, .privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4,
+.privacy-policy h5,
+.privacy-policy h6, .title--gallery, .title--align-left, .title--newsletter, .title--card, .advantages .advantage p {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.125rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -56,13 +62,13 @@ body {
   line-height: 125%;
   color: #EF393B;
 }
-.title--card {
+.title--card, .advantages .advantage p {
   font-size: 1.5625rem;
   color: #006FB8;
   line-height: 140%;
 }
 .title--newsletter {
-  font-size: 2.25rem;
+  font-size: 2.1875rem;
   color: #FFFFFF;
 }
 @media (min-width: 991px) {
@@ -72,6 +78,11 @@ body {
 }
 .title--align-left {
   text-align: left;
+}
+.title--gallery {
+  font-size: 2.1875rem;
+  color: #006FB8;
+  line-height: 130%;
 }
 
 .subtitle, .product .product-wrapper .subtitle, .product--first .product-wrapper .subtitle, .product--second .product-wrapper .subtitle, .subtitle--align-left {
@@ -86,7 +97,7 @@ body {
   text-align: left;
 }
 
-.text, header nav .navbar-nav .nav-link, .banner .banner-content-wrapper p, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .link, .text--center {
+.text, header nav .navbar-nav .nav-link, .banner .banner-content-wrapper p, .banner-internal .banner-internal-content-wrapper p, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .privacy-policy p, .eutectic-plates .custom-list li p, .eutectic-plates .specifications p, .eutectic-plates .specifications strong, .link, .text--center {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
@@ -241,7 +252,7 @@ header nav .navbar-nav .btn {
   }
 }
 .banner .banner-content-wrapper h1 {
-  font-size: 3.375rem;
+  font-size: 3.75rem;
   line-height: 117%;
   margin-bottom: 1.125rem;
   color: inherit;
@@ -258,6 +269,68 @@ header nav .navbar-nav .btn {
   margin-bottom: 1.75rem;
 }
 
+.banner-internal {
+  height: 45vh;
+  background-image: url("../images/banner-privacidade.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+.banner-internal .banner-internal-content-wrapper {
+  padding-top: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-internal .banner-internal-content-wrapper h1 {
+  font-size: 3.75rem;
+  line-height: 117%;
+  margin-bottom: 1.125rem;
+  color: inherit;
+  max-width: 302px;
+}
+.banner-internal .banner-internal-content-wrapper p {
+  font-size: 1.375rem;
+  line-height: 160%;
+  color: inherit;
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 991px) {
+  .banner-internal {
+    height: 60vh;
+    background-image: url("../images/banner-privacidade.jpg");
+  }
+  .banner-internal .banner-internal-content-wrapper {
+    padding-top: 18%;
+    justify-content: flex-start;
+    align-items: normal;
+  }
+  .banner-internal .banner-internal-content-wrapper h1 {
+    text-align: left;
+    max-width: unset;
+  }
+}
+
+.breadcrumb li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  line-height: 184%;
+  transition: all 0.3s;
+}
+.breadcrumb li a:hover {
+  color: #888888;
+}
+.breadcrumb li + li::before {
+  padding: 4px;
+  content: ">";
+}
+
+.carousel-cards .card-advantage p {
+  max-width: 355px;
+}
 @media (min-width: 991px) {
   .carousel-cards span.title--card {
     max-width: 185px;
@@ -266,6 +339,9 @@ header nav .navbar-nav .btn {
   .carousel-cards img {
     width: 98px;
     height: 98px;
+  }
+  .carousel-cards .card-advantage p {
+    max-width: 260px;
   }
 }
 
@@ -338,7 +414,7 @@ header nav .navbar-nav .btn {
   background-color: #FFFFFF;
 }
 .product .product-wrapper .subtitle, .product--first .product-wrapper .subtitle, .product--second .product-wrapper .subtitle {
-  font-size: 2.25rem;
+  font-size: 2.1875rem;
   color: inherit;
   line-height: 114%;
   text-align: left;
@@ -412,6 +488,10 @@ header nav .navbar-nav .btn {
   }
 }
 
+footer {
+  border-top: 1px solid #BCBCBC;
+  background-color: #FFFFFF;
+}
 @media (min-width: 991px) and (max-width: 1700px) {
   footer .logo {
     width: 100%;
@@ -484,6 +564,121 @@ footer .address-footer address {
   .google-maps {
     padding-bottom: 20%;
   }
+}
+
+.privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4,
+.privacy-policy h5,
+.privacy-policy h6 {
+  text-align: left;
+  margin: 1rem 0 0.75rem;
+}
+.privacy-policy p {
+  overflow-wrap: break-word;
+}
+
+.who-we-are {
+  position: relative;
+}
+.who-we-are::before {
+  content: "";
+  width: 614px;
+  height: 392px;
+  background-image: url(../images/curves-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2%;
+  left: -12%;
+  z-index: -1;
+}
+.who-we-are::after {
+  content: "";
+  width: 614px;
+  height: 392px;
+  background-image: url(../images/curves-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -5%;
+  right: -40%;
+  z-index: -1;
+}
+@media (min-width: 991px) {
+  .who-we-are::before {
+    content: url(../images/curves-1.svg);
+    background-image: unset;
+    background-size: unset;
+    background-repeat: unset;
+    width: unset;
+    height: unset;
+    top: -3%;
+    left: -15%;
+  }
+  .who-we-are::after {
+    content: url(../images/curves-2.svg);
+    width: unset;
+    height: unset;
+    background-image: unset;
+    background-size: unset;
+    background-repeat: unset;
+    bottom: -1%;
+    right: -15%;
+  }
+}
+.who-we-are .title--align-left {
+  max-width: 428px;
+}
+
+.carousel-gallery .gallery-item img {
+  max-width: 320px;
+}
+@media (min-width: 991px) {
+  .carousel-gallery .gallery-item img {
+    max-width: 100%;
+  }
+}
+
+.advantages {
+  background-color: #004D80;
+  height: 390px;
+  color: #FFFFFF;
+}
+@media (min-width: 991px) {
+  .advantages {
+    height: 220px;
+  }
+}
+.advantages .advantage p {
+  color: #FFFFFF;
+  text-align: left;
+  max-width: 274px;
+}
+.advantages .advantage img {
+  width: 98px;
+  height: 98px;
+}
+
+.eutectic-plates .title--align-left {
+  font-size: 2.5rem;
+}
+.eutectic-plates .custom-list {
+  max-width: 261px;
+}
+.eutectic-plates .custom-list li {
+  padding-inline-start: 1ch;
+}
+.eutectic-plates .custom-list li::marker {
+  content: url(../images/check.svg);
+}
+@media (min-width: 991px) {
+  .eutectic-plates .custom-list {
+    max-width: unset;
+  }
+}
+.eutectic-plates .specifications strong {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

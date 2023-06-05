@@ -2,6 +2,9 @@
 
 body {
     overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .base-button {
@@ -101,7 +104,14 @@ body {
         text-align: left;
     }
 
+    &--gallery {
+        @extend .title;
+        font-size: variables.$font-xl;
 
+        color: variables.$blue-500;
+
+        line-height: 130%;
+    }
 }
 
 .subtitle {

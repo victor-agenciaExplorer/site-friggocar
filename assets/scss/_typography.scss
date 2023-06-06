@@ -1,0 +1,96 @@
+@use 'variables';
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+
+    line-height: 125%;
+
+    color: variables.$red;
+
+    @media (min-width: 991px) {
+        font-size: variables.$font-xxl;
+    }
+
+    &--card {
+        @extend .title;
+        font-size: variables.$font-lg;
+
+        color: variables.$blue-500;
+
+        line-height: 140%;
+    }
+
+    &--newsletter {
+        @extend .title;
+        font-size: variables.$font-xl;
+
+        color: variables.$white;
+
+        @media (min-width: 991px) {
+            text-align: left;
+        }
+    }
+
+    &--align-left {
+        @extend .title;
+        text-align: left;
+    }
+
+    &--gallery {
+        @extend .title;
+
+        font-size: variables.$font-xl;
+
+        color: variables.$blue-500;
+
+        line-height: 130%;
+    }
+
+    &--smaller {
+        @extend .title;
+        font-size: 1.875rem;
+
+        @media (min-width: 991px) {
+            font-size: variables.$font-xl;
+        }
+    }
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: variables.$font-xmd;
+    font-weight: 700;
+
+    text-align: center;
+
+    line-height: 125%;
+
+    color: variables.$blue-500;
+
+    &--align-left {
+        @extend .subtitle;
+        text-align: left;
+    }
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: variables.$font-md;
+    font-weight: 500;
+
+    color: variables.$blue-900;
+
+    line-height: 167%;
+
+    &--center {
+        @extend .text;
+        text-align: center;
+    }
+}

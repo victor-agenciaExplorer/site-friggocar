@@ -1,0 +1,147 @@
+@use 'variables';
+@use 'base';
+@use 'typography';
+
+#home {
+    .about-us {
+        .curves-background {
+            @media (min-width: 991px) {
+                background-image: url('../images/curves.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 150% 110%;
+    
+                height: 100%;
+                position: relative;
+            }
+        }
+    }
+
+    .newsletter {
+        background-color: variables.$blue-900;
+        background-image: url('../images/bg-newsletter.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .newsletter-content-wrapper {
+            max-width: 320px;
+            margin: 0 auto;
+
+            @media (min-width: 991px) {
+                max-width: unset;
+                margin: unset;
+
+                .title--newsletter {
+                    max-width: 470px;
+                }
+
+                .form {
+                    max-width: 480px;
+                }
+            }
+        }
+    }
+}
+
+#privacy-policy {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @extend .title;
+        text-align: left;
+
+        font-size: 2.5rem;
+
+        margin: 1rem 0 0.75rem;
+    }
+
+    p {
+        @extend .text;
+        overflow-wrap: break-word;
+    }
+}
+
+#who-we-are {
+    position: relative;
+
+    &::before {
+        // content: url(../images/curves-1.svg);
+        content: '';
+        width: 614px;
+        height: 392px;
+        background-image: url(../images/curves-1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        top: -2%;
+        left: -12%;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        width: 614px;
+        height: 392px;
+        background-image: url(../images/curves-2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        bottom: -5%;
+        right: -40%;
+        z-index: -1;
+    }
+
+    @media (min-width: 991px) {
+        &::before {
+            content: url(../images/curves-1.svg);
+            background-image: unset;
+            background-size: unset;
+            background-repeat: unset;
+
+            width: unset;
+            height: unset;
+
+            top: -3%;
+            left: -15%;
+        }
+
+        &::after {
+            content: url(../images/curves-2.svg);
+            width: unset;
+            height: unset;
+
+            background-image: unset;
+            background-size: unset;
+            background-repeat: unset;
+
+            bottom: -1%;
+            right: -15%;
+        }
+    }
+
+    .title--align-left {
+        max-width: 428px;
+    }
+
+}
+
+#eutectic-plates {
+    .specifications {
+
+        p,
+        strong {
+            @extend .text;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+    }
+}

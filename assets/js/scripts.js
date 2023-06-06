@@ -37,7 +37,7 @@ $(window).on('load resize orientationchange', function () {
                 });
             }
         }
-    })
+    });
 
     $('.carousel-gallery').each(function () {
         var $carousel = $(this);
@@ -57,7 +57,7 @@ $(window).on('load resize orientationchange', function () {
                 });
             }
         }
-    })
+    });
 })
 
 $(function () {
@@ -78,5 +78,24 @@ $(function () {
         $(header).toggleClass('active');
     })
 
-    //  alert("Este é um site em desenvolvimento. Ao final do dia, teremos uma nova versão por aqui. Enquanto isso, que tal me enviar um feedback no Slack, sobre sua experiência? Obrigado! :D");
+    $('.banner-carousel').slick({
+        dots: true,
+        mobileFirst: true,
+        arrows: false,
+        fade: true,
+    })
+
+    $('.banner-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        var banner = $('.banner');
+
+        if (currentSlide === 0) {
+            banner.removeClass('banner-1 banner-2').addClass('banner-0')
+        } else if (currentSlide === 1) {
+            banner.removeClass('banner-0 banner-2').addClass('banner-1')
+        } else {
+            banner.removeClass('banner-0 banner-1').addClass('banner-2')
+        }
+      });
+
+    //alert("Este é um site em desenvolvimento. Ao final do dia, teremos uma nova versão por aqui. Enquanto isso, que tal me enviar um feedback no Slack, sobre sua experiência? Obrigado! :D");
 });

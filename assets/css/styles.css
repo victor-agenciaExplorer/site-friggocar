@@ -1,3 +1,90 @@
+/* @media (max-width: 768px) {
+    $font-xxxl: 3.375rem; //54
+    $font-xxl: 2.5rem; //40
+    $font-xl: 1.875rem; //30
+} */
+.title, #privacy-policy h2,
+#privacy-policy h3,
+#privacy-policy h4,
+#privacy-policy h5,
+#privacy-policy h6, .banner .banner-content-wrapper h1,
+.banner .banner-content-wrapper h2,
+.banner .banner-content-wrapper h3, .internal-banner .banner-internal-content-wrapper h1, footer strong, .title--smaller, .title--gallery, .title--align-left, .title--newsletter, .title--card, .advantages .advantage p {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 125%;
+  color: #EF393B;
+}
+@media (min-width: 991px) {
+  .title, #privacy-policy h2,
+  #privacy-policy h3,
+  #privacy-policy h4,
+  #privacy-policy h5,
+  #privacy-policy h6, .banner .banner-content-wrapper h1,
+  .banner .banner-content-wrapper h2,
+  .banner .banner-content-wrapper h3, .internal-banner .banner-internal-content-wrapper h1, footer strong, .title--smaller, .title--gallery, .title--align-left, .title--newsletter, .title--card, .advantages .advantage p {
+    font-size: 3.125rem;
+  }
+}
+.title--card, .advantages .advantage p {
+  font-size: 1.5625rem;
+  color: #006FB8;
+  line-height: 140%;
+}
+.title--newsletter {
+  font-size: 2.1875rem;
+  color: #FFFFFF;
+}
+@media (min-width: 991px) {
+  .title--newsletter {
+    text-align: left;
+  }
+}
+.title--align-left {
+  text-align: left;
+}
+.title--gallery {
+  font-size: 2.1875rem;
+  color: #006FB8;
+  line-height: 130%;
+}
+.title--smaller {
+  font-size: 1.875rem;
+}
+@media (min-width: 991px) {
+  .title--smaller {
+    font-size: 2.1875rem;
+  }
+}
+
+.subtitle, .product .product-wrapper .subtitle, .product--first .product-wrapper .subtitle, .product--second .product-wrapper .subtitle, .internal-banner .banner-internal-content-wrapper p.subtitle, .subtitle--align-left {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 125%;
+  color: #006FB8;
+}
+.subtitle--align-left {
+  text-align: left;
+}
+
+.text, #privacy-policy p, #eutectic-plates .specifications p,
+#eutectic-plates .specifications strong, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .custom-list li p, .link, header nav .navbar-nav .nav-link, .banner .banner-content-wrapper p, .internal-banner .banner-internal-content-wrapper p, .text--center {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #004D80;
+  line-height: 167%;
+}
+.text--center {
+  text-align: center;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
@@ -46,118 +133,6 @@ body {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   font-size: 1.125rem;
-}
-
-.title, .banner .banner-content-wrapper h1, .banner-internal .banner-internal-content-wrapper h1, footer strong, .privacy-policy h2,
-.privacy-policy h3,
-.privacy-policy h4,
-.privacy-policy h5,
-.privacy-policy h6, .title--gallery, .title--align-left, .title--newsletter, .title--card, .advantages .advantage p {
-  font-family: "Oswald", sans-serif;
-  font-size: 3.125rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-  line-height: 125%;
-  color: #EF393B;
-}
-.title--card, .advantages .advantage p {
-  font-size: 1.5625rem;
-  color: #006FB8;
-  line-height: 140%;
-}
-.title--newsletter {
-  font-size: 2.1875rem;
-  color: #FFFFFF;
-}
-@media (min-width: 991px) {
-  .title--newsletter {
-    text-align: left;
-  }
-}
-.title--align-left {
-  text-align: left;
-}
-.title--gallery {
-  font-size: 2.1875rem;
-  color: #006FB8;
-  line-height: 130%;
-}
-
-.subtitle, .product .product-wrapper .subtitle, .product--first .product-wrapper .subtitle, .product--second .product-wrapper .subtitle, .subtitle--align-left {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 125%;
-  color: #006FB8;
-}
-.subtitle--align-left {
-  text-align: left;
-}
-
-.text, header nav .navbar-nav .nav-link, .banner .banner-content-wrapper p, .banner-internal .banner-internal-content-wrapper p, .product .product-wrapper p, .product--first .product-wrapper p, .product--second .product-wrapper p, .product .product-wrapper ul li, .product--first .product-wrapper ul li, .product--second .product-wrapper ul li, .privacy-policy p, .eutectic-plates .custom-list li p, .eutectic-plates .specifications p, .eutectic-plates .specifications strong, .link, .text--center {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #004D80;
-  line-height: 167%;
-}
-.text--center {
-  text-align: center;
-}
-
-.form input, .form textarea {
-  background: transparent;
-  padding: 0.625rem 0.75rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #004D80;
-  border: 1px solid #C5C5C5;
-  border-radius: 0;
-}
-.form input::placeholder, .form textarea::placeholder {
-  color: #004D80;
-}
-.form input:focus, .form input:focus-visible, .form textarea:focus, .form textarea:focus-visible {
-  outline: 1px solid #C5C5C5;
-}
-.form input.input-newsletter, .form textarea.input-newsletter {
-  color: #FFFFFF;
-  border: 1px solid #888888;
-}
-.form input.input-newsletter::placeholder, .form textarea.input-newsletter::placeholder {
-  color: #FFFFFF;
-}
-.form input.input-newsletter:focus, .form input.input-newsletter:focus-visible, .form textarea.input-newsletter:focus, .form textarea.input-newsletter:focus-visible {
-  outline: 1px solid #888888;
-}
-
-.link {
-  text-decoration: none;
-  gap: 1.25rem;
-}
-
-address {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #004D80;
-  line-height: 150%;
-  text-align: center;
-  max-width: 350px;
-  margin: 0 auto;
-}
-address a {
-  text-decoration: none;
-  color: inherit;
-}
-@media (min-width: 991px) {
-  address {
-    max-width: 600px;
-  }
 }
 
 header nav.navbar {
@@ -228,15 +203,32 @@ header nav .navbar-nav .btn {
 
 .banner {
   height: 95vh;
-  background-image: url("../images/banner.jpg");
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.1s;
+}
+.banner.banner-0 {
+  background-image: url("../images/banner.jpg");
+}
+.banner.banner-1 {
+  background-image: url("../images/banner1.jpg");
+}
+.banner.banner-2 {
+  background-image: url("../images/banner2.jpg");
 }
 @media (min-width: 991px) {
   .banner {
-    background-image: url("../images/banner-desktop.jpg");
     height: 100vh;
+  }
+  .banner.banner-0 {
+    background-image: url("../images/banner-desktop.jpg");
+  }
+  .banner.banner-1 {
+    background-image: url("../images/banner1-desktop.jpg");
+  }
+  .banner.banner-2 {
+    background-image: url("../images/banner2-desktop.jpg");
   }
 }
 .banner > div {
@@ -251,14 +243,18 @@ header nav .navbar-nav .btn {
     padding-top: 12%;
   }
 }
-.banner .banner-content-wrapper h1 {
+.banner .banner-content-wrapper h1,
+.banner .banner-content-wrapper h2,
+.banner .banner-content-wrapper h3 {
   font-size: 3.75rem;
   line-height: 117%;
   margin-bottom: 1.125rem;
   color: inherit;
 }
 @media (min-width: 991px) {
-  .banner .banner-content-wrapper h1 {
+  .banner .banner-content-wrapper h1,
+  .banner .banner-content-wrapper h2,
+  .banner .banner-content-wrapper h3 {
     text-align: left;
   }
 }
@@ -268,8 +264,24 @@ header nav .navbar-nav .btn {
   color: inherit;
   margin-bottom: 1.75rem;
 }
+.banner .banner-content-wrapper .fispal .cta-banner {
+  background-color: #EF393B;
+}
+.banner .banner-content-wrapper .fispal ul {
+  list-style: inside;
+}
+@media (min-width: 991px) {
+  .banner .banner-content-wrapper .fispal ul {
+    list-style: unset;
+  }
+}
+@media (min-width: 991px) {
+  .banner .banner-content-wrapper .banner-carousel .slick-dots {
+    width: auto;
+  }
+}
 
-.banner-internal {
+.internal-banner {
   height: 45vh;
   background-image: url("../images/banner-privacidade.jpg");
   background-position: center;
@@ -277,40 +289,74 @@ header nav .navbar-nav .btn {
   background-size: cover;
   color: #FFFFFF;
 }
-.banner-internal .banner-internal-content-wrapper {
+.internal-banner .banner-internal-content-wrapper {
   padding-top: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.banner-internal .banner-internal-content-wrapper h1 {
+.internal-banner .banner-internal-content-wrapper h1 {
   font-size: 3.75rem;
   line-height: 117%;
   margin-bottom: 1.125rem;
   color: inherit;
   max-width: 302px;
 }
-.banner-internal .banner-internal-content-wrapper p {
+.internal-banner .banner-internal-content-wrapper p {
   font-size: 1.375rem;
   line-height: 160%;
   color: inherit;
   margin-bottom: 1.75rem;
 }
+.internal-banner .banner-internal-content-wrapper p.subtitle {
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
 @media (min-width: 991px) {
-  .banner-internal {
+  .internal-banner .banner-internal-content-wrapper p.subtitle {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 991px) {
+  .internal-banner {
     height: 60vh;
     background-image: url("../images/banner-privacidade.jpg");
   }
-  .banner-internal .banner-internal-content-wrapper {
+  .internal-banner .banner-internal-content-wrapper {
     padding-top: 18%;
     justify-content: flex-start;
     align-items: normal;
   }
-  .banner-internal .banner-internal-content-wrapper h1 {
+  .internal-banner .banner-internal-content-wrapper h1 {
     text-align: left;
     max-width: unset;
   }
+}
+
+footer {
+  border-top: 1px solid #BCBCBC;
+  background-color: #FFFFFF;
+}
+@media (min-width: 991px) and (max-width: 1700px) {
+  footer .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+footer strong {
+  color: #004D80;
+  font-size: 1rem;
+}
+footer .address-footer {
+  background-color: #004D80;
+  color: #FFFFFF;
+  padding: 2.5rem;
+}
+footer .address-footer address {
+  color: inherit;
 }
 
 .breadcrumb li a {
@@ -342,17 +388,6 @@ header nav .navbar-nav .btn {
   }
   .carousel-cards .card-advantage p {
     max-width: 260px;
-  }
-}
-
-@media (min-width: 991px) {
-  .about-us .curves-background {
-    background-image: url("../images/curves.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150% 110%;
-    height: 100%;
-    position: relative;
   }
 }
 
@@ -464,54 +499,6 @@ header nav .navbar-nav .btn {
   }
 }
 
-.newsletter {
-  background-color: #004D80;
-  background-image: url("../images/bg-newsletter.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.newsletter .newsletter-content-wrapper {
-  max-width: 320px;
-  margin: 0 auto;
-}
-@media (min-width: 991px) {
-  .newsletter .newsletter-content-wrapper {
-    max-width: unset;
-    margin: unset;
-  }
-  .newsletter .newsletter-content-wrapper .title--newsletter {
-    max-width: 470px;
-  }
-  .newsletter .newsletter-content-wrapper .form {
-    max-width: 480px;
-  }
-}
-
-footer {
-  border-top: 1px solid #BCBCBC;
-  background-color: #FFFFFF;
-}
-@media (min-width: 991px) and (max-width: 1700px) {
-  footer .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-footer strong {
-  color: #004D80;
-  font-size: 1rem;
-}
-footer .address-footer {
-  background-color: #004D80;
-  color: #FFFFFF;
-  padding: 2.5rem;
-}
-footer .address-footer address {
-  color: inherit;
-}
-
 .float {
   position: fixed;
   z-index: 100;
@@ -566,71 +553,6 @@ footer .address-footer address {
   }
 }
 
-.privacy-policy h2,
-.privacy-policy h3,
-.privacy-policy h4,
-.privacy-policy h5,
-.privacy-policy h6 {
-  text-align: left;
-  margin: 1rem 0 0.75rem;
-}
-.privacy-policy p {
-  overflow-wrap: break-word;
-}
-
-.who-we-are {
-  position: relative;
-}
-.who-we-are::before {
-  content: "";
-  width: 614px;
-  height: 392px;
-  background-image: url(../images/curves-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -2%;
-  left: -12%;
-  z-index: -1;
-}
-.who-we-are::after {
-  content: "";
-  width: 614px;
-  height: 392px;
-  background-image: url(../images/curves-2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: -5%;
-  right: -40%;
-  z-index: -1;
-}
-@media (min-width: 991px) {
-  .who-we-are::before {
-    content: url(../images/curves-1.svg);
-    background-image: unset;
-    background-size: unset;
-    background-repeat: unset;
-    width: unset;
-    height: unset;
-    top: -3%;
-    left: -15%;
-  }
-  .who-we-are::after {
-    content: url(../images/curves-2.svg);
-    width: unset;
-    height: unset;
-    background-image: unset;
-    background-size: unset;
-    background-repeat: unset;
-    bottom: -1%;
-    right: -15%;
-  }
-}
-.who-we-are .title--align-left {
-  max-width: 428px;
-}
-
 .carousel-gallery .gallery-item img {
   max-width: 320px;
 }
@@ -655,29 +577,179 @@ footer .address-footer address {
   text-align: left;
   max-width: 274px;
 }
+.advantages .advantage p.smaller {
+  max-width: 170px;
+}
 .advantages .advantage img {
   width: 98px;
   height: 98px;
 }
 
-.eutectic-plates .title--align-left {
-  font-size: 2.5rem;
-}
-.eutectic-plates .custom-list {
-  max-width: 261px;
-}
-.eutectic-plates .custom-list li {
+.custom-list li {
   padding-inline-start: 1ch;
 }
-.eutectic-plates .custom-list li::marker {
+.custom-list li::marker {
   content: url(../images/check.svg);
 }
 @media (min-width: 991px) {
-  .eutectic-plates .custom-list {
+  .custom-list {
     max-width: unset;
   }
 }
-.eutectic-plates .specifications strong {
+
+.form input, .form textarea {
+  background: transparent;
+  padding: 0.625rem 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #004D80;
+  border: 1px solid #C5C5C5;
+  border-radius: 0;
+}
+.form input::placeholder, .form textarea::placeholder {
+  color: #004D80;
+}
+.form input:focus, .form input:focus-visible, .form textarea:focus, .form textarea:focus-visible {
+  outline: 1px solid #C5C5C5;
+}
+.form input.input-newsletter, .form textarea.input-newsletter {
+  color: #FFFFFF;
+  border: 1px solid #888888;
+}
+.form input.input-newsletter::placeholder, .form textarea.input-newsletter::placeholder {
+  color: #FFFFFF;
+}
+.form input.input-newsletter:focus, .form input.input-newsletter:focus-visible, .form textarea.input-newsletter:focus, .form textarea.input-newsletter:focus-visible {
+  outline: 1px solid #888888;
+}
+
+.link {
+  text-decoration: none;
+  gap: 1.25rem;
+}
+
+address {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #004D80;
+  line-height: 150%;
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+address a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 991px) {
+  address {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 991px) {
+  #home .about-us .curves-background {
+    background-image: url("../images/curves.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 110%;
+    height: 100%;
+    position: relative;
+  }
+}
+#home .newsletter {
+  background-color: #004D80;
+  background-image: url("../images/bg-newsletter.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .newsletter .newsletter-content-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 991px) {
+  #home .newsletter .newsletter-content-wrapper {
+    max-width: unset;
+    margin: unset;
+  }
+  #home .newsletter .newsletter-content-wrapper .title--newsletter {
+    max-width: 470px;
+  }
+  #home .newsletter .newsletter-content-wrapper .form {
+    max-width: 480px;
+  }
+}
+
+#privacy-policy h2,
+#privacy-policy h3,
+#privacy-policy h4,
+#privacy-policy h5,
+#privacy-policy h6 {
+  text-align: left;
+  font-size: 2.5rem;
+  margin: 1rem 0 0.75rem;
+}
+#privacy-policy p {
+  overflow-wrap: break-word;
+}
+
+#who-we-are {
+  position: relative;
+}
+#who-we-are::before {
+  content: "";
+  width: 614px;
+  height: 392px;
+  background-image: url(../images/curves-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2%;
+  left: -12%;
+  z-index: -1;
+}
+#who-we-are::after {
+  content: "";
+  width: 614px;
+  height: 392px;
+  background-image: url(../images/curves-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -5%;
+  right: -40%;
+  z-index: -1;
+}
+@media (min-width: 991px) {
+  #who-we-are::before {
+    content: url(../images/curves-1.svg);
+    background-image: unset;
+    background-size: unset;
+    background-repeat: unset;
+    width: unset;
+    height: unset;
+    top: -3%;
+    left: -15%;
+  }
+  #who-we-are::after {
+    content: url(../images/curves-2.svg);
+    width: unset;
+    height: unset;
+    background-image: unset;
+    background-size: unset;
+    background-repeat: unset;
+    bottom: -1%;
+    right: -15%;
+  }
+}
+#who-we-are .title--align-left {
+  max-width: 428px;
+}
+
+#eutectic-plates .specifications strong {
   font-weight: 700;
 }
 

@@ -86,6 +86,7 @@
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -139,6 +140,16 @@ header nav.navbar {
   padding: 2rem !important;
   transition: all 0.3s;
 }
+header nav.navbar .navbar-brand {
+  width: 157px;
+  height: 46px;
+}
+@media (min-width: 991px) {
+  header nav.navbar .navbar-brand {
+    width: 260px;
+    height: 76px;
+  }
+}
 header nav.navbar.fixedHeader {
   background-color: transparent;
   backdrop-filter: blur(0px);
@@ -169,7 +180,7 @@ header nav.navbar .navbar-toggler :focus-visible {
   box-shadow: unset;
 }
 header nav.navbar.active {
-  background-color: rgba(0, 77, 128, 0.8);
+  background-color: rgba(0, 77, 128, 0.95);
   backdrop-filter: blur(15px);
 }
 header nav.navbar.active .navbar-toggler {
@@ -212,23 +223,20 @@ header nav .navbar-nav .btn {
   background-image: url("../images/banner.jpg");
 }
 .banner.banner-1 {
-  background-image: url("../images/banner1.jpg");
+  background-image: url("../images/banner2.jpg");
 }
 .banner.banner-2 {
-  background-image: url("../images/banner2.jpg");
+  background: rgba(0, 77, 128, 0.8);
 }
 @media (min-width: 991px) {
   .banner {
     height: 100vh;
   }
   .banner.banner-0 {
-    background-image: url("../images/banner-desktop.jpg");
+    background-image: url("../images/banner-desktop.webp");
   }
   .banner.banner-1 {
-    background-image: url("../images/banner1-desktop.jpg");
-  }
-  .banner.banner-2 {
-    background-image: url("../images/banner2-desktop.jpg");
+    background-image: url("../images/banner2-desktop.webp");
   }
 }
 .banner > div {
@@ -283,7 +291,7 @@ header nav .navbar-nav .btn {
 
 .internal-banner {
   height: 45vh;
-  background-image: url("../images/banner-privacidade.jpg");
+  background: rgba(0, 77, 128, 0.8);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,7 +330,6 @@ header nav .navbar-nav .btn {
 @media (min-width: 991px) {
   .internal-banner {
     height: 60vh;
-    background-image: url("../images/banner-privacidade.jpg");
   }
   .internal-banner .banner-internal-content-wrapper {
     padding-top: 18%;
@@ -683,6 +690,9 @@ address a {
   }
 }
 
+#privacy-policy .internal-banner {
+  background-image: url("../images/banner-privacidade.jpg");
+}
 #privacy-policy h2,
 #privacy-policy h3,
 #privacy-policy h4,
@@ -698,6 +708,10 @@ address a {
 
 #who-we-are {
   position: relative;
+  overflow: hidden;
+}
+#who-we-are .internal-banner {
+  background-image: url("../images/who-we-are-internal-bg.webp");
 }
 #who-we-are::before {
   content: "";
@@ -707,8 +721,8 @@ address a {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -2%;
-  left: -12%;
+  top: 9%;
+  left: 0;
   z-index: -1;
 }
 #who-we-are::after {
@@ -731,8 +745,8 @@ address a {
     background-repeat: unset;
     width: unset;
     height: unset;
-    top: -3%;
-    left: -15%;
+    top: 5%;
+    left: 0;
   }
   #who-we-are::after {
     content: url(../images/curves-2.svg);
@@ -749,8 +763,19 @@ address a {
   max-width: 428px;
 }
 
+#eutectic-plates .internal-banner {
+  background-image: url("../images/plates-internal-bg.jpg");
+}
 #eutectic-plates .specifications strong {
   font-weight: 700;
+}
+
+#contact .internal-banner {
+  background-image: url("../images/contact-internal-bg.webp");
+}
+
+#refrigerated-bodies .internal-banner {
+  background-image: url("../images/bodies-internal-bg.webp");
 }
 
 /*# sourceMappingURL=styles.css.map */

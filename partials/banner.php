@@ -8,14 +8,14 @@
                     <a href="template-carrocerias.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
                 </div>
 
-                <div>
+                <!-- <div>
                     <h1>Placa <br>eutética</h1>
                     <p>Qualidade do carregamento <br>até a última entrega do dia</p>
                     <a href="template-euteticas.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
-                </div>
+                </div> -->
 
                 <div class="fispal">
-                    <h1>Fispal</h1>
+                    <h2>Fispal</h2>
                     <p>Visite nosso estande na Fispal Sorvetes 2023 - G070</p>
                     <ul>
                         <li>
@@ -25,7 +25,7 @@
                             Expo Center Norte, São Paulo
                         </li>
                     </ul>
-                    <a href="#" class="btn base-button cta-banner" role="button">Saiba mais</a>
+                    <a href="https://www.fispalfoodservice.com.br/" target="_blank" class="btn base-button cta-banner" role="button">Saiba mais</a>
                 </div>
             </div>
         </div>

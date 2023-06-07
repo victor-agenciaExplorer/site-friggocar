@@ -8,6 +8,16 @@ header {
             padding: 2rem !important;
             transition: all .3s;
 
+            .navbar-brand {
+                width: 157px;
+                height: 46px;
+
+                @media (min-width: 991px) {
+                    width: 260px;
+                    height: 76px;
+                }
+            }
+
             &.fixedHeader {
                 background-color: transparent;
                 backdrop-filter: blur(0px);
@@ -47,7 +57,7 @@ header {
             }
 
             &.active {
-                background-color: rgba(0, 77, 128, 0.8);
+                background-color: rgba(0, 77, 128, 0.95);
                 backdrop-filter: blur(15px);
 
                 .navbar-toggler {
@@ -108,26 +118,22 @@ header {
     }
 
     &.banner-1 {
-        background-image: url('../images/banner1.jpg');
+        background-image: url('../images/banner2.jpg');
     }
 
     &.banner-2 {
-        background-image: url('../images/banner2.jpg');
+        background: rgba(0, 77, 128, 0.8);
     }
 
     @media (min-width: 991px) {
         height: 100vh;
 
         &.banner-0 {
-            background-image: url('../images/banner-desktop.jpg');
+            background-image: url('../images/banner-desktop.webp');
         }
 
         &.banner-1 {
-            background-image: url('../images/banner1-desktop.jpg');
-        }
-
-        &.banner-2 {
-            background-image: url('../images/banner2-desktop.jpg');
+            background-image: url('../images/banner2-desktop.webp');
         }
     }
 
@@ -194,7 +200,7 @@ header {
 .internal-banner {
     height: 45vh;
 
-    background-image: url('../images/banner-privacidade.jpg');
+    background: rgba(0, 77, 128, 0.8);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +249,6 @@ header {
 
     @media (min-width: 991px) {
         height: 60vh;
-        background-image: url('../images/banner-privacidade.jpg');
 
         .banner-internal-content-wrapper {
             padding-top: 18%;

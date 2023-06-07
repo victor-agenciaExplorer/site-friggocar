@@ -16,24 +16,24 @@
             <span>vendas@friggocar.com.br</span>
         </a>
 
-        <a href="https://api.whatsapp.com/send?phone=5511917628902&text=Oi!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20para%20contar%20com%20a%20Friggocar%20em%20minha%20frota." aria-label="WhatsApp" title="Whatsapp" class="icon-link link" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=5511983070782text=Oi!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20para%20contar%20com%20a%20Friggocar%20em%20minha%20frota." aria-label="WhatsApp" title="Whatsapp" class="icon-link link" target="_blank">
             <img src="assets/images/whatsapp.svg" width="31" height="31" alt="" class="img-fluid">
-            <span>11 91762.8902</span>
+            <span>11 98307.0782 </span>
         </a>
     </div>
 
     <div class="d-flex flex-column flex-lg-row align-items-center">
         <strong>Siga-nos nas redes sociais</strong>
         <div class="mt-4 mb-5 my-lg-0 ms-lg-3 d-flex gap-5 gap-lg-4">
-            <a href="#" aria-label="">
+            <a href="https://www.instagram.com/friggocar/" aria-label="Instagram Friggocar" target="_blank">
                 <img src="assets/images/instagram.svg" width="37" height="37" alt="" class="img-fluid">
             </a>
 
-            <a href="#" aria-label="">
+            <a href="https://www.linkedin.com/company/frigocar-ind%C3%BAstria-e-comercio-de-carrocerias-e-c%C3%A2maras-frigor%C3%ADficas-ltda/about/" aria-label="Linkedin Friggocar" target="_blank">
                 <img src="assets/images/linkedin.svg" width="37" height="37" alt="" class="img-fluid">
             </a>
 
-            <a href="https://www.facebook.com/friggocar?fref=ts" aria-label="">
+            <a href="https://www.facebook.com/friggocar?fref=ts" aria-label="Facebook Friggocar">
                 <img src="assets/images/facebook.svg" width="37" height="37" alt="" class="img-fluid">
             </a>
         </div>

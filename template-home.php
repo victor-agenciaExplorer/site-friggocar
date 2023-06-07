@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <a href="template-contato.php" class="btn base-button cta-cards mt-5" role="button">Quero saber mais</a>
+            <a href="contato.php" class="btn base-button cta-cards mt-5" role="button">Quero saber mais</a>
         </section>
 
         <!-- Quem somos -->
@@ -91,7 +91,7 @@
                         Oferecemos um atendimento personalizado desde a criação do projeto até a assistência técnica.
                     </p>
 
-                    <a href="template-quemsomos.php" role="button" class="btn base-button">
+                    <a href="quem-somos.php" role="button" class="btn base-button">
                         Conheça mais sobre a Friggocar
                     </a>
                 </div>
@@ -116,7 +116,7 @@
                             gelados e supergelados.
                         </p>
 
-                        <a href="template-carrocerias.php" role="button" class="btn base-button--outlined icon-link">
+                        <a href="carrocerias-frigorificas.php" role="button" class="btn base-button--outlined icon-link">
                             Saiba mais
                             <img src="assets/images/arrow.svg" alt="" width="12px" height="8px">
                         </a>
@@ -131,7 +131,7 @@
                             Tecnologia 100% nacional para atender as necessidades do mercado brasileiro
                         </p>
 
-                        <a href="template-euteticas.php" role="button" class="btn base-button--outlined">
+                        <a href="placas-euteticas.php" role="button" class="btn base-button--outlined">
                             Saiba mais
                             <img src="assets/images/arrow.svg" alt="" width="12px" height="8px">
                         </a>

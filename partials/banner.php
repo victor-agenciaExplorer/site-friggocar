@@ -5,13 +5,13 @@
                 <div>
                     <h1>carrocerias frigoríficas</h1>
                     <p>Qualidade renovada<br>Excelência comprovada</p>
-                    <a href="template-carrocerias.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
+                    <a href="carrocerias-frigorificas.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
                 </div>
 
                 <!-- <div>
                     <h1>Placa <br>eutética</h1>
                     <p>Qualidade do carregamento <br>até a última entrega do dia</p>
-                    <a href="template-euteticas.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
+                    <a href="placas-euteticas.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
                 </div> -->
 
                 <div class="fispal">

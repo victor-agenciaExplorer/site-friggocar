@@ -14,7 +14,7 @@
                 <div class="banner-internal-content-wrapper offset-lg-1">
                     <ul class="breadcrumb d-flex justify-content-center justify-content-lg-start gap-1">
                         <li><a href="/">Página inicial</a></li>
-                        <li><a href="pages/template-euteticas.php">Placa Eutética</a></li>
+                        <li><a href="pages/placas-euteticas.php">Placa Eutética</a></li>
                     </ul>
 
                     <h1 class="title">

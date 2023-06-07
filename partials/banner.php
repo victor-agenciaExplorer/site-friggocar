@@ -2,11 +2,11 @@
     <div class="text-center text-lg-start">
         <div class="banner-content-wrapper offset-lg-1">
             <div class="banner-carousel">
-                <div>
+                <!-- <div>
                     <h1>carrocerias frigoríficas</h1>
                     <p>Qualidade renovada<br>Excelência comprovada</p>
                     <a href="carrocerias-frigorificas.php" class="btn base-button cta-banner" role="button">Saiba mais</a>
-                </div>
+                </div> -->
 
                 <!-- <div>
                     <h1>Placa <br>eutética</h1>
@@ -15,7 +15,7 @@
                 </div> -->
 
                 <div class="fispal">
-                    <h2>Fispal</h2>
+                    <h1>Fispal</h1>
                     <p>Visite nosso estande na Fispal Sorvetes 2023 - G070</p>
                     <ul>
                         <li>

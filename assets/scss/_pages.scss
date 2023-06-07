@@ -3,6 +3,8 @@
 @use 'typography';
 
 #home {
+    overflow: hidden;
+    
     .about-us {
         .curves-background {
             @media (min-width: 991px) {

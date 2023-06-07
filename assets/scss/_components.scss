@@ -316,6 +316,7 @@
 }
 
 .custom-list {
+
     // max-width: 261px;
     li {
         padding-inline-start: 1ch;
@@ -335,7 +336,9 @@
 }
 
 .form {
-    input, textarea {
+
+    input,
+    textarea {
         background: transparent;
 
         padding: 0.625rem 0.75rem;
@@ -348,12 +351,13 @@
 
         border: 1px solid variables.$gray-200;
         border-radius: 0;
-        
+
         &::placeholder {
             color: variables.$blue-900;
         }
 
-        &:focus, &:focus-visible {
+        &:focus,
+        &:focus-visible {
             outline: 1px solid variables.$gray-200;
         }
 
@@ -365,7 +369,8 @@
                 color: variables.$white;
             }
 
-            &:focus, &:focus-visible {
+            &:focus,
+            &:focus-visible {
                 outline: 1px solid variables.$gray-500;
             }
         }
@@ -378,6 +383,12 @@
     text-decoration: none;
 
     gap: 1.25rem;
+
+    transition: all .3s;
+
+    &:hover {
+        color: variables.$blue-500;
+    }
 }
 
 address {

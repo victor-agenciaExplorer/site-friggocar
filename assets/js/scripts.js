@@ -79,7 +79,7 @@ $(function () {
     })
 
     $('.banner-carousel').slick({
-        dots: true,
+        dots: false,
         mobileFirst: true,
         arrows: false,
         fade: true,

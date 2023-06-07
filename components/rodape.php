@@ -16,7 +16,7 @@
             <span>vendas@friggocar.com.br</span>
         </a>
 
-        <a href="https://api.whatsapp.com/send?phone=5511983070782text=Oi!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20para%20contar%20com%20a%20Friggocar%20em%20minha%20frota." aria-label="WhatsApp" title="Whatsapp" class="icon-link link" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=5511983070782&text=Oi!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20para%20contar%20com%20a%20Friggocar%20em%20minha%20frota." aria-label="WhatsApp" title="Whatsapp" class="icon-link link" target="_blank">
             <img src="assets/images/whatsapp.svg" width="31" height="31" alt="" class="img-fluid">
             <span>11 98307.0782 </span>
         </a>
@@ -39,12 +39,15 @@
         </div>
     </div>
 
-    <div class="address-footer w-100">
-        <address class="d-flex flex-grow-1">
+    <div class="address-footer w-100 d-flex flex-column align-items-center">
+        <address class="d-flex flex-grow-1 mb-2">
             <a href="https://goo.gl/maps/DpEJcRJ9WMRKgSnR6" target="_blank">
                 Rua Alexandrina Mathias de Oliveira, 88 - São Roque da Chave, Itupeva - SP
             </a>
         </address>
+        <a href="politica-privacidade.php" target="_blank" class="link-privacy">
+            Política de privacidade
+        </a>
     </div>
 </footer>
 

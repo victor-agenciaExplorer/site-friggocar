@@ -32,8 +32,6 @@
             <?php require('components/form.php'); ?>
         </section>
 
-        <?php require('components/contatos.php'); ?>
-
         <?php require('components/maps.php'); ?>
     </main>
 

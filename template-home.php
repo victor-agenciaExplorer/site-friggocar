@@ -169,9 +169,6 @@
             <?php require('components/form.php'); ?>
         </section>
 
-        <!-- Contatos -->
-        <?php require('components/contatos.php'); ?>
-
         <!-- Google Maps -->
         <?php require('components/maps.php'); ?>
     </main>

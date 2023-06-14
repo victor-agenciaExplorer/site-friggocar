@@ -4,7 +4,7 @@
 <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/lib/slick/js/slick.min.js"></script>
 
-<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/scripts/scripts.js"></script>
 
 </body>
 

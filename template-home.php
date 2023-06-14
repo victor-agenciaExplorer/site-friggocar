@@ -5,7 +5,7 @@
 </head>
 
 <body>
-
+    <?php require('partials/gtag.php'); ?>
     <?php require('components/menu.php'); ?>
 
     <main id="home">
@@ -98,7 +98,7 @@
 
                 <div class="col-lg p-0 justify-content-lg-center curves-background d-flex">
                     <img src="assets/images/truck.png" alt="" class="img-fluid flex-grow-1 d-lg-none">
-                    <img src="assets/images/truck-desktop.webp" alt="" width="1198" height="748" class="img-fluid d-none d-lg-block position-absolute top-50 start-50 translate-middle">
+                    <img src="assets/images/truck-desktop.png" alt="" width="1198" height="748" class="img-fluid d-none d-lg-block position-absolute top-50 start-50 translate-middle">
                 </div>
             </div>
         </section>
@@ -151,9 +151,9 @@
                         Inscreva-se para <br> receber novidades
                     </h4>
 
-                    <form class="form d-flex flex-column gap-3 col">
-                        <input type="text" name="" id="" placeholder="Nome" class="input-newsletter">
-                        <input type="email" name="" id="" placeholder="E-mail" class="input-newsletter">
+                    <form class="form d-flex flex-column gap-3 col" method="POST" action="../assets/scripts/form-newsletter.php">
+                        <input type="text" name="name" id="" placeholder="Nome" class="input-newsletter" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" class="input-newsletter" required>
                         <button type="submit" class="btn base-button mt-3">Enviar</button>
                     </form>
                 </div>

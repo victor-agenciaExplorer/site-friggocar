@@ -5,7 +5,7 @@
 </head>
 
 <body>
-
+    <?php require('partials/gtag.php'); ?>
     <?php require('components/menu.php'); ?>
 
     <main id="refrigerated-bodies">
@@ -52,7 +52,7 @@
         <section class="container-lg pt-5 mt-4">
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6 justify-content-center d-flex d-lg-block order-lg-last">
-                    <img src="assets/images/friggocar-truck.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/hero-image-01.jpg" alt="" class="img-fluid">
                 </div>
 
                 <div class="pt-5 pt-lg-0 col-lg-5">
@@ -83,7 +83,7 @@
         <section class="container-lg pt-5 mt-4">
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6 justify-content-center d-flex d-lg-block">
-                    <img src="assets/images/friggocar-truck2.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/hero-image-02.jpg" alt="" class="img-fluid">
                 </div>
 
                 <div class="pt-5 pt-lg-0 col-lg-5">
@@ -139,7 +139,7 @@
         <section class="container-lg pt-5 mt-4">
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6 justify-content-center d-flex d-lg-block order-lg-last">
-                    <img src="assets/images/friggocar-truck-with-bg.webp" alt="" class="img-fluid">
+                    <img src="assets/images/hero-image-03.jpg" alt="" class="img-fluid">
                 </div>
 
                 <div class="pt-5 pt-lg-0 col-lg-5">

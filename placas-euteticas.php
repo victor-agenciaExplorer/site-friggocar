@@ -5,7 +5,7 @@
 </head>
 
 <body>
-
+    <?php require('partials/gtag.php'); ?>
     <?php require('components/menu.php'); ?>
 
     <main id="eutectic-plates">
@@ -117,7 +117,7 @@
                             Material:
                         </strong>
                         <p>
-                            aço-inox 304L e aço galvanizado
+                            aço-inox 304L
                         </p>
 
                         <strong>

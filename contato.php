@@ -5,7 +5,7 @@
 </head>
 
 <body>
-
+    <?php require('partials/gtag.php'); ?>
     <?php require('components/menu.php'); ?>
 
     <main id="contact" class="contact">
